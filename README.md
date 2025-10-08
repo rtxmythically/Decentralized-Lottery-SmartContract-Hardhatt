@@ -38,7 +38,5 @@ The goal of this project is to demonstrate how blockchain technology can ensure 
 > ⚠️ The current version uses a simple pseudo-random method for testing.  
 > It is **not suitable for production use** — integrate Chainlink VRF for real randomness.
 
----
 
-## 📁 Project Structure
 
