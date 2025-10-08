@@ -1,42 +1,41 @@
-# 🎯 Decentralized Lottery Smart Contract
+# Decentralized Lottery Smart Contract
 
-This repository contains the **smart contract layer** for the Decentralized Lottery DApp — a fully on-chain, transparent, and fair lottery system built with **Solidity** and **Hardhat**.
+This repository contains the **Solidity smart contract** for the Decentralized Lottery system.  
+It is deployed on the **Ethereum Sepolia Testnet**, enabling users to participate in a fair and transparent on-chain lottery with an entry fee of **0.01 ETH**.
 
-> 💡 The frontend DApp is available in a separate repository:  
-> [Decentralized Lottery Frontend](https://github.com/rtxmythically/decentralized-lottery)
+> **Frontend Application:**  
+> [Decentralized Lottery DApp (React)](https://github.com/rtxmythically/decentralized-lottery)
 
----
-
-## 🚀 Overview
-
-This smart contract implements a decentralized lottery where participants can enter by paying an entry fee.  
-When specific conditions are met, a random winner is selected, who can then withdraw the accumulated prize pool.
-
-The goal of this project is to demonstrate how blockchain technology can ensure **fairness**, **transparency**, and **verifiable randomness** in lottery systems.
+> **Live DApp:**  
+> [https://decentralized-lottery.web.app/](https://decentralized-lottery.web.app/)
 
 ---
 
-## ⚙️ Features
+## Overview
 
-- Fully decentralized — no central authority controls the lottery.
-- All entries and transactions are recorded on-chain.
-- Winner selection logic implemented in Solidity.
-- Easy to integrate with a frontend using `ethers.js` or `web3.js`.
-- Designed for future integration with **Chainlink VRF** for provable randomness.
+The contract implements a decentralized lottery mechanism using Solidity.  
+Participants can join by paying a fixed entry fee, and once the conditions are met, the contract selects a random winner who can withdraw the prize pool.  
+All transactions and states are stored on-chain, ensuring full transparency and immutability.
 
 ---
 
-## 🧩 Contract Workflow
+## Contract Details
 
-1. A player calls `enterLottery()` and sends the required entry fee.
-2. The player’s address is added to the participants list.
-3. Once conditions are met (time, participant count, etc.), the contract owner calls `pickWinner()`.
-4. A pseudo-random winner is selected.
-5. The winner can call `withdrawPrize()` to claim their winnings.
-6. The lottery resets and a new round can begin.
+- **Network:** Ethereum Sepolia Testnet  
+- **Contract Address:** `0x9FDBBBeda4495fc63A2E90886D6EDeFf52343233`  
+- **Entry Fee:** `0.01 ETH`  
+- **Language:** Solidity  
+- **Framework:** Hardhat  
 
-> ⚠️ The current version uses a simple pseudo-random method for testing.  
-> It is **not suitable for production use** — integrate Chainlink VRF for real randomness.
+---
 
+## Features
 
+- Fully decentralized, transparent lottery logic  
+- Fixed entry fee (0.01 ETH)  
+- Winner selection by pseudo-random number generation  
+- Automatic fund transfer to the winner  
+- Easy integration with frontends via **Ethers.js**  
+- Future support for **Chainlink VRF** (verifiable randomness)
+- 
 
