@@ -37,5 +37,3 @@ All transactions and states are stored on-chain, ensuring full transparency and 
 - Automatic fund transfer to the winner  
 - Easy integration with frontends via **Ethers.js**  
 - Future support for **Chainlink VRF** (verifiable randomness)
-- 
-
