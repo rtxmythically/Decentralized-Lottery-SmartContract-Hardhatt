@@ -28,5 +28,6 @@ pnpm-debug.log*
 dist/
 build/
 tmp/
+ignition
 
 *.tsbuildinfo
