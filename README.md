@@ -23,6 +23,7 @@ All transactions and states are stored on-chain, ensuring full transparency and 
 
 - **Network:** Ethereum Sepolia Testnet  
 - **Contract Address:** `0x9FDBBBeda4495fc63A2E90886D6EDeFf52343233`  
+- **Create Contract Address:** `0xc68e7a95261772258c7c838c9a1413e61664ec41`  
 - **Entry Fee:** `0.01 ETH`  
 - **Language:** Solidity  
 - **Framework:** Hardhat  
